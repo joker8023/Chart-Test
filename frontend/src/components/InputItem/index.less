@@ -1,0 +1,39 @@
+#inputItem {
+  display: block;
+  margin: 30px 0;
+  color: #f5a623;
+
+  .err {
+    position: absolute;
+    color: #ea5b4d;
+    line-height: 2;
+    margin-left: 10px;
+    word-break: keep-all;
+  }
+
+  input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid #7e7e7e;
+    font-size: 20px;
+    color: #fff;
+
+    &:-webkit-autofill {
+      box-shadow: 0 0 0 1000px #fff inset !important; //使用足够大的纯色内阴影覆盖黄色背景
+    }
+
+    &:focus {
+      // border: none;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: rgba(251, 251, 251, 0.3);
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+}

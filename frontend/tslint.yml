@@ -1,0 +1,27 @@
+defaultSeverity: error
+extends:
+  - tslint-react
+  - tslint-eslint-rules
+rules:
+  eofline: true
+  no-console: true
+  no-construct: true
+  no-debugger: true
+  no-reference: true
+  no-var-keyword: true
+  triple-equals: true
+  semicolon:
+    - true
+    - 'always'
+    - 'ignore-bound-class-methods'
+  no-trailing-whitespace: true
+  jsx-no-multiline-js: false
+  jsx-equals-spacing:
+    - 'always'
+    - 'never'
+  jsx-self-close: true
+  jsx-no-lambda: false
+  jsx-space-before-trailing-slash: true
+  typedef-whitespace: true
+  jsx-boolean-value: false
+  jsx-alignment: false
